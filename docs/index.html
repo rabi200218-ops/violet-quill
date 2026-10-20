@@ -133,7 +133,7 @@ section.block.alt { background: var(--paper-2); }
 @media (max-width: 520px) { .gallery, .duo { grid-template-columns: minmax(0, 1fr); } }
 
 /* ---------- 설치 ---------- */
-.steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; counter-reset: s; }
+.steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; counter-reset: s; }
 .steps li { counter-increment: s; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 8px; }
 .steps li::before { content: counter(s); width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--violet); color: var(--on-violet); font-weight: 700; font-size: 14px; }
 .steps b { font-size: 16px; }
@@ -193,7 +193,7 @@ footer .wrap { display: flex; gap: 16px; flex-wrap: wrap; justify-content: space
     <div class="stars" aria-hidden="true"></div>
     <div class="moon" aria-hidden="true"></div>
     <div class="wrap hero-grid">
-      <span class="eyebrow" style="color:#cdb8ff">웹소설 작가를 위한 무료 집필 프로그램 · Windows</span>
+      <span class="eyebrow" style="color:#cdb8ff">웹소설 작가를 위한 무료 집필 프로그램 · Windows · Android</span>
       <h1>쓰는 데만 집중하는 <em>보랏빛 원고지</em></h1>
       <p class="lede">원고, 캐릭터, 타임라인, 플롯을 한 화면에서 오가며 씁니다. 연재처 기준 글자 수를 세고, 연재용으로 바로 복사하고, 다른 PC에서 이어 씁니다.</p>
       <div class="hero-cta">
@@ -201,11 +201,14 @@ footer .wrap { display: flex; gap: 16px; flex-wrap: wrap; justify-content: space
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
           <span class="dl-label">Windows용 무료 다운로드</span>
         </a>
-        <a class="btn ghost" href="#write">기능 둘러보기</a>
+        <a class="btn ghost apk-link" href="https://github.com/rabi200218-ops/violet-quill/releases/latest">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+          <span>Android (폰·태블릿) APK</span>
+        </a>
       </div>
       <div class="dl-meta">
         <span class="dl-version">최신 버전</span>
-        <span>Windows 10 · 11 (64비트)</span>
+        <span>Windows 10 · 11 (64비트) · Android 8 이상 폰·태블릿</span>
         <span>새 버전은 프로그램이 알려 줘요</span>
       </div>
       <div class="platforms" aria-label="글자 수·연재 규칙 프리셋">
@@ -227,7 +230,7 @@ footer .wrap { display: flex; gap: 16px; flex-wrap: wrap; justify-content: space
   <div class="facts">
     <div class="wrap">
       <div class="fact"><b>무료</b><span>광고 없음, 회원가입 없음</span></div>
-      <div class="fact"><b>내 PC 저장</b><span>인터넷 없이도 씁니다</span></div>
+      <div class="fact"><b>PC · 폰 · 태블릿</b><span>구글 드라이브로 이어 쓰기</span></div>
       <div class="fact"><b>5개 연재처</b><span>글자 수·복사 규칙 프리셋</span></div>
       <div class="fact"><b>7 × 13</b><span>UI 디자인 × 색 테마</span></div>
     </div>
@@ -475,6 +478,7 @@ footer .wrap { display: flex; gap: 16px; flex-wrap: wrap; justify-content: space
         <li><b>설치 파일 받기</b><p>위의 <b>다운로드</b>를 누르고 <span class="kbd">VioletQuill-Setup-버전.exe</span>를 받아요. 다른 파일은 받지 않아도 돼요.</p></li>
         <li><b>“PC 보호” 창이 뜨면</b><p>코드 서명 인증서가 없어서 나오는 Windows 기본 경고예요. <span class="kbd">추가 정보</span> → <span class="kbd">실행</span>을 눌러요.</p></li>
         <li><b>설치 위치 고르고 설치</b><p>그대로 <span class="kbd">다음</span>만 눌러도 돼요. 바탕화면에 바로가기가 생겨요.</p></li>
+        <li><b>폰·태블릿은 APK</b><p>Android에서는 <span class="kbd">VioletQuill-버전.apk</span>를 받아 누르면 설치돼요. 처음이면 "출처를 알 수 없는 앱" 허용 창이 떠요.</p></li>
         <li><b>예시 작품으로 둘러보기</b><p>첫 화면의 <span class="kbd">예시 작품 둘러보기</span>로 기능을 먼저 만져 보세요. 지워도 괜찮아요.</p></li>
       </ol>
       <p class="note">업데이트: 새 버전이 나오면 프로그램 오른쪽 아래에 알림이 떠요. <b>업데이트 받기 → 지금 다시 시작</b>을 누르면 끝이고, 작품과 설정은 그대로 남아요. 직접 확인하려면 오른쪽 위 <b>?</b> → <b>업데이트 확인</b>.</p>
@@ -504,7 +508,8 @@ footer .wrap { display: flex; gap: 16px; flex-wrap: wrap; justify-content: space
       <div class="faq">
         <details><summary>정말 무료인가요?</summary><p>네. 광고도, 회원가입도 없어요. 제미나이 기능만 내 API 키로 쓰는 만큼 구글에 비용이 나가요(선택).</p></details>
         <details><summary>원고는 어디에 저장되나요?</summary><p>내 PC에 저장돼요. 인터넷이 없어도 쓰고 저장할 수 있어요. 구글 드라이브를 연결하면 내 드라이브의 앱 전용 폴더에도 백업돼요. 다른 곳(개발자 서버 등)으로는 보내지 않아요.</p></details>
-        <details><summary>맥이나 모바일에서도 되나요?</summary><p>지금은 Windows 10·11(64비트)용만 있어요.</p></details>
+        <details><summary>폰이나 태블릿에서도 되나요?</summary><p>네. Android 8 이상 폰·태블릿용 APK가 있어요. 화면 크기에 맞춰 폰은 아래 메뉴·서랍형, 태블릿은 PC와 비슷한 화면으로 바뀌어요. 구글 드라이브로 로그인하면 PC에서 쓰던 작품을 폰에서 이어 써요. 맥·아이폰용은 아직 없어요.</p></details>
+        <details><summary>APK는 어떻게 설치하나요?</summary><p>폰에서 <b>Android APK</b>를 눌러 받은 뒤, 다운로드 알림이나 파일 앱에서 눌러 설치해요. 처음이면 "출처를 알 수 없는 앱 설치"를 브라우저(크롬)에 허용해 달라는 창이 떠요. 새 버전이 나오면 앱이 알려 주고, 누르면 새 APK를 받아 덮어 설치하면 돼요(작품은 그대로).</p></details>
         <details><summary>설치할 때 “Windows의 PC 보호” 경고가 떠요.</summary><p>유료 코드 서명 인증서를 쓰지 않은 프로그램이면 나오는 경고예요. <b>추가 정보 → 실행</b>을 누르면 설치돼요.</p></details>
         <details><summary>업데이트하면 작품이 사라지지 않나요?</summary><p>사라지지 않아요. 작품과 설정은 프로그램과 따로 저장돼서 업데이트나 다시 설치해도 그대로예요. 그래도 중요한 작품은 가끔 <b>작품 통째로 저장(.vquill)</b>으로 백업해 두면 좋아요.</p></details>
         <details><summary>다른 집필 프로그램에서 쓰던 원고를 옮길 수 있나요?</summary><p>본문은 그대로 붙여 넣으면 돼요. 한 줄이 한 문단이라 대부분 그대로 맞고, 문단 사이 빈 줄은 메뉴에서 한 번에 빼거나 넣을 수 있어요.</p></details>
@@ -576,6 +581,8 @@ footer .wrap { display: flex; gap: 16px; flex-wrap: wrap; justify-content: space
       .then(function (rel) {
         if (!rel) return;
         const exe = (rel.assets || []).find(function (a) { return /\.exe$/i.test(a.name); });
+        const apk = (rel.assets || []).find(function (a) { return /\.apk$/i.test(a.name); });
+        if (apk) document.querySelectorAll('.apk-link').forEach(function (a) { a.href = apk.browser_download_url; });
         const v = rel.tag_name || rel.name;
         document.querySelectorAll('.dl-version').forEach(function (el) {
           el.textContent = '최신 ' + v + (exe ? ' · ' + (exe.size / 1048576).toFixed(0) + 'MB' : '');
